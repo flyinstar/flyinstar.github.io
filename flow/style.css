@@ -22,3 +22,17 @@ body {
     will-change: transform;
     /* 优化动画性能 */
 }
+
+/* 移动端点击时防止高亮 */
+.hover-text {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+/* 响应式调整文字大小 */
+@media (max-width: 768px) {
+    .hover-text {
+        font-size: 32px;
+        /* 移动端字号缩小 */
+    }
+}
