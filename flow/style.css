@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a1a1a;
+    margin: 0;
+}
+
+.hover-text {
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* 每个字母的样式 */
+.hover-text span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    /* 优化动画性能 */
+}
